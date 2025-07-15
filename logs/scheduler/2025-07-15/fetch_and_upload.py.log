@@ -4484,3 +4484,101 @@ ModuleNotFoundError: No module named 'src'
 [2025-07-15T10:58:52.990+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:58:52.989+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-07-15T10:58:53.033+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:58:53.032+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
 [2025-07-15T10:58:53.071+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.396 seconds
+[2025-07-15T10:59:23.377+0000] {processor.py:186} INFO - Started process (PID=4835) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:23.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T10:59:23.383+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:23.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:23.677+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:23.722+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:23.718+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T10:59:23.793+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:23.792+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T10:59:23.833+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.465 seconds
+[2025-07-15T10:59:54.356+0000] {processor.py:186} INFO - Started process (PID=4896) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:54.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T10:59:54.362+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:54.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:54.669+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T10:59:54.709+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:54.707+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T10:59:54.754+0000] {logging_mixin.py:190} INFO - [2025-07-15T10:59:54.753+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T10:59:54.787+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.440 seconds
+[2025-07-15T11:00:25.529+0000] {processor.py:186} INFO - Started process (PID=4954) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:25.532+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:00:25.537+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:25.536+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:25.885+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:25.916+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:25.915+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:00:25.961+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:25.960+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:00:25.993+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.479 seconds
+[2025-07-15T11:00:56.920+0000] {processor.py:186} INFO - Started process (PID=5018) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:56.922+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:00:56.928+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:56.927+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:57.245+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:00:57.278+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:57.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:00:57.329+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:00:57.329+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:00:57.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.458 seconds
+[2025-07-15T11:01:28.450+0000] {processor.py:186} INFO - Started process (PID=5082) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:01:28.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:01:28.459+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:01:28.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:01:28.716+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:01:28.751+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:01:28.750+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:01:28.801+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:01:28.801+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:01:28.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.397 seconds
+[2025-07-15T11:01:59.643+0000] {processor.py:186} INFO - Started process (PID=5146) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:01:59.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:01:59.649+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:01:59.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:01:59.995+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:02:00.036+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:02:00.035+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:02:00.087+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:02:00.086+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:02:00.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.487 seconds
+[2025-07-15T11:02:31.232+0000] {processor.py:186} INFO - Started process (PID=5210) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:02:31.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:02:31.239+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:02:31.238+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:02:31.561+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:02:31.599+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:02:31.599+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:02:31.645+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:02:31.645+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:02:31.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.455 seconds
+[2025-07-15T11:03:02.372+0000] {processor.py:186} INFO - Started process (PID=5274) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:02.374+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:03:02.379+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:02.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:02.755+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:02.790+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:02.789+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:03:02.837+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:02.837+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:03:02.867+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.505 seconds
+[2025-07-15T11:03:33.853+0000] {processor.py:186} INFO - Started process (PID=5339) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:33.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:03:33.858+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:33.858+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:34.114+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:03:34.146+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:34.145+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:03:34.191+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:03:34.190+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:03:34.220+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.376 seconds
+[2025-07-15T11:04:04.746+0000] {processor.py:186} INFO - Started process (PID=5401) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:04.747+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:04:04.751+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:04.751+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:05.262+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:05.318+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:05.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:04:05.390+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:05.390+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:04:05.448+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.715 seconds
+[2025-07-15T11:04:35.742+0000] {processor.py:186} INFO - Started process (PID=5465) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:35.744+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:04:35.747+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:35.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:36.198+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:04:36.230+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:36.229+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:04:36.279+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:04:36.278+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:04:36.311+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.580 seconds
+[2025-07-15T11:05:06.591+0000] {processor.py:186} INFO - Started process (PID=5532) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:06.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:05:06.600+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:06.598+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:07.162+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:07.238+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:07.235+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:05:07.296+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:07.296+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:05:07.338+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.764 seconds
+[2025-07-15T11:05:38.183+0000] {processor.py:186} INFO - Started process (PID=5596) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:38.185+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:05:38.189+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:38.188+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:38.595+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:05:38.625+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:38.624+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:05:38.668+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:05:38.667+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:05:38.698+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.525 seconds
+[2025-07-15T11:06:08.846+0000] {processor.py:186} INFO - Started process (PID=5662) to work on /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:06:08.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/fetch_and_upload.py for tasks to queue
+[2025-07-15T11:06:08.851+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:06:08.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:06:09.228+0000] {processor.py:925} INFO - DAG(s) 'fetch_exchange_rates_and_upload' retrieved from /opt/airflow/dags/fetch_and_upload.py
+[2025-07-15T11:06:09.260+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:06:09.259+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-07-15T11:06:09.305+0000] {logging_mixin.py:190} INFO - [2025-07-15T11:06:09.304+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_exchange_rates_and_upload to 2025-07-15 00:00:00+00:00, run_after=2025-07-16 00:00:00+00:00
+[2025-07-15T11:06:09.333+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/fetch_and_upload.py took 0.497 seconds
