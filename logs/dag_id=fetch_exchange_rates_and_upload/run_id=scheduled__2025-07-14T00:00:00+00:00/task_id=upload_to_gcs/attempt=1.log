@@ -1,0 +1,30 @@
+[2025-07-15T10:26:46.870+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-15T10:26:46.900+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_exchange_rates_and_upload.upload_to_gcs scheduled__2025-07-14T00:00:00+00:00 [queued]>
+[2025-07-15T10:26:46.914+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_exchange_rates_and_upload.upload_to_gcs scheduled__2025-07-14T00:00:00+00:00 [queued]>
+[2025-07-15T10:26:46.915+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-07-15T10:26:46.938+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): upload_to_gcs> on 2025-07-14 00:00:00+00:00
+[2025-07-15T10:26:46.952+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=155) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-07-15T10:26:46.954+0000] {standard_task_runner.py:72} INFO - Started process 158 to run task
+[2025-07-15T10:26:46.955+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_exchange_rates_and_upload', 'upload_to_gcs', 'scheduled__2025-07-14T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmp4ffcs4e8']
+[2025-07-15T10:26:46.957+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask upload_to_gcs
+[2025-07-15T10:26:47.038+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_exchange_rates_and_upload.upload_to_gcs scheduled__2025-07-14T00:00:00+00:00 [running]> on host 7742db002d02
+[2025-07-15T10:26:47.160+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='nam' AIRFLOW_CTX_DAG_ID='fetch_exchange_rates_and_upload' AIRFLOW_CTX_TASK_ID='upload_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2025-07-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-14T00:00:00+00:00'
+[2025-07-15T10:26:47.162+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-15T10:26:47.162+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-15T10:26:47.163+0000] {logging_mixin.py:190} INFO - Current task name:upload_to_gcs state:running start_date:2025-07-15 10:26:46.900980+00:00
+[2025-07-15T10:26:47.163+0000] {logging_mixin.py:190} INFO - Dag name:fetch_exchange_rates_and_upload and current dag run status:running
+[2025-07-15T10:26:47.163+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-07-15T10:26:48.916+0000] {upload_gcs.py:21} INFO - Đã upload /opt/***/src/data/exchange_rates_2015_2025.csv lên gs://nam-data-engineering/exchange_rates_2015_2025.csv
+[2025-07-15T10:26:49.018+0000] {upload_gcs.py:24} INFO - Upload thành công
+[2025-07-15T10:26:49.019+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-07-15T10:26:49.038+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-07-15T10:26:49.039+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fetch_exchange_rates_and_upload, task_id=upload_to_gcs, run_id=scheduled__2025-07-14T00:00:00+00:00, execution_date=20250714T000000, start_date=20250715T102646, end_date=20250715T102649
+[2025-07-15T10:26:49.058+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-07-15T10:26:49.059+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-07-15T10:26:49.060+0000] {logging_mixin.py:190} INFO - Dag name:fetch_exchange_rates_and_upload queued_at:2025-07-15 10:21:01.321588+00:00
+[2025-07-15T10:26:49.060+0000] {logging_mixin.py:190} INFO - Task hostname:7742db002d02 operator:PythonOperator
+[2025-07-15T10:26:49.100+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-07-15T10:26:49.154+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-15T10:26:49.157+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

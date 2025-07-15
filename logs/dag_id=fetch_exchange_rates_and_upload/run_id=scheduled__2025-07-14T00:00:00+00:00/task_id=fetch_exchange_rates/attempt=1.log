@@ -1,0 +1,146 @@
+[2025-07-15T10:21:15.128+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-15T10:21:15.394+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_exchange_rates_and_upload.fetch_exchange_rates scheduled__2025-07-14T00:00:00+00:00 [queued]>
+[2025-07-15T10:21:15.412+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_exchange_rates_and_upload.fetch_exchange_rates scheduled__2025-07-14T00:00:00+00:00 [queued]>
+[2025-07-15T10:21:15.412+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-07-15T10:21:15.440+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): fetch_exchange_rates> on 2025-07-14 00:00:00+00:00
+[2025-07-15T10:21:15.456+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=85) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-07-15T10:21:15.459+0000] {standard_task_runner.py:72} INFO - Started process 87 to run task
+[2025-07-15T10:21:15.461+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_exchange_rates_and_upload', 'fetch_exchange_rates', 'scheduled__2025-07-14T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/fetch_and_upload.py', '--cfg-path', '/tmp/tmp9aics18h']
+[2025-07-15T10:21:15.463+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask fetch_exchange_rates
+[2025-07-15T10:21:15.565+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_exchange_rates_and_upload.fetch_exchange_rates scheduled__2025-07-14T00:00:00+00:00 [running]> on host 7742db002d02
+[2025-07-15T10:21:15.729+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='nam' AIRFLOW_CTX_DAG_ID='fetch_exchange_rates_and_upload' AIRFLOW_CTX_TASK_ID='fetch_exchange_rates' AIRFLOW_CTX_EXECUTION_DATE='2025-07-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-14T00:00:00+00:00'
+[2025-07-15T10:21:15.731+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-07-15T10:21:15.732+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-07-15T10:21:15.732+0000] {logging_mixin.py:190} INFO - Current task name:fetch_exchange_rates state:running start_date:2025-07-15 10:21:15.395122+00:00
+[2025-07-15T10:21:15.733+0000] {logging_mixin.py:190} INFO - Dag name:fetch_exchange_rates_and_upload and current dag run status:running
+[2025-07-15T10:21:15.733+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-07-15T10:21:15.734+0000] {fetch_exchange_rates.py:81} WARNING - Begin run Task 1
+[2025-07-15T10:21:15.735+0000] {fetch_exchange_rates.py:85} INFO - Fetching exchange rates from 2015-01-01 to 2025-07-08
+[2025-07-15T10:21:15.738+0000] {fetch_exchange_rates.py:97} INFO - Generated 11 date ranges for API requests
+[2025-07-15T10:21:15.748+0000] {fetch_exchange_rates.py:107} INFO - Fetching exchange rates for 2015-01-01 to 2015-12-31 (1/11)
+[2025-07-15T10:21:15.749+0000] {fetch_exchange_rates.py:26} INFO - Requesting API: https://api.exchangerate.host/timeframe
+[2025-07-15T10:21:15.750+0000] {fetch_exchange_rates.py:27} INFO - Request params: {'start_date': '2015-01-01', 'end_date': '2015-12-31', 'currencies': 'VND,CNY,JPY,KRW,EUR,INR,GBP,HKD,AUD', 'access_key': '7a75f3586d9ba851ae879467a58b5c64'}
+[2025-07-15T10:21:17.552+0000] {fetch_exchange_rates.py:31} INFO - Response status code : 200
+[2025-07-15T10:21:17.604+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/fetch_exchange_rates.py", line 111, in fetch_exchange_rates
+    save_to_csv(rates, filename, append=(i > 1 or os.path.exists(filename)))
+  File "/opt/airflow/src/fetch_exchange_rates.py", line 64, in save_to_csv
+    df.to_csv(filename, mode=mode, index=False, header=not append)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/src/data'
+[2025-07-15T10:21:17.635+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-07-15T10:21:17.635+0000] {logging_mixin.py:190} INFO - Task start:2025-07-15 10:21:15.395122+00:00 end:2025-07-15 10:21:17.634358+00:00 duration:2.239236
+[2025-07-15T10:21:17.636+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): fetch_exchange_rates> dag:<DAG: fetch_exchange_rates_and_upload> dagrun:<DagRun fetch_exchange_rates_and_upload @ 2025-07-14 00:00:00+00:00: scheduled__2025-07-14T00:00:00+00:00, state:running, queued_at: 2025-07-15 10:21:01.321588+00:00. externally triggered: False>
+[2025-07-15T10:21:17.636+0000] {logging_mixin.py:190} INFO - Failure caused by Cannot save file into a non-existent directory: '/opt/***/src/data'
+[2025-07-15T10:21:17.637+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_exchange_rates_and_upload, task_id=fetch_exchange_rates, run_id=scheduled__2025-07-14T00:00:00+00:00, execution_date=20250714T000000, start_date=20250715T102115, end_date=20250715T102117
+[2025-07-15T10:21:17.665+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-07-15T10:21:17.666+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 5 for task fetch_exchange_rates (Cannot save file into a non-existent directory: '/opt/***/src/data'; 87)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/fetch_exchange_rates.py", line 111, in fetch_exchange_rates
+    save_to_csv(rates, filename, append=(i > 1 or os.path.exists(filename)))
+  File "/opt/airflow/src/fetch_exchange_rates.py", line 64, in save_to_csv
+    df.to_csv(filename, mode=mode, index=False, header=not append)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/src/data'
+[2025-07-15T10:21:17.723+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-07-15T10:21:17.766+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-15T10:21:17.768+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

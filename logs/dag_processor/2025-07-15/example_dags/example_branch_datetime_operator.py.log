@@ -1,0 +1,2 @@
+{"timestamp":"2025-07-15T01:15:16.995318","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T01:15:48.691054","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_branch_datetime_operator.py","logger":"airflow.models.dagbag.DagBag"}

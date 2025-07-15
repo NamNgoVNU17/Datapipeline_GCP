@@ -1,0 +1,5 @@
+pandas
+requests
+google-cloud-storage
+psycopg2-binary
+tenacity
