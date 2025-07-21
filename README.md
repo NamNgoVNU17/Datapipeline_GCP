@@ -58,3 +58,5 @@ Example API call :
 
 ---
 ## Pipeline Architecture
+
+![Pipeline Architecture](/img/architecture.png)
